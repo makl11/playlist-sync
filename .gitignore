@@ -78,3 +78,6 @@ outTmp/
 /test.output
 /kotlin-native/dist
 kotlin-ide/
+
+# DO NOT INCLUDE CLIENT SECRETS!
+**/client_secret*.json
