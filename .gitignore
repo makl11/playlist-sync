@@ -81,3 +81,4 @@ kotlin-ide/
 
 # DO NOT INCLUDE CLIENT SECRETS!
 **/client_secret*.json
+**/spotify.properties
