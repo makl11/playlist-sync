@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "1.9.0"
     application
+    kotlin("plugin.serialization") version "1.9.0"
 }
 
 group = "de.max_dev"
@@ -17,6 +18,7 @@ dependencies {
     implementation("com.google.apis:google-api-services-youtube:v3-rev222-1.25.0")
     // Spotify API Kotlin lib
     implementation("com.adamratzman:spotify-api-kotlin-core:3.8.8")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-properties:1.5.1")
 }
 
 kotlin {

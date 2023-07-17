@@ -1,8 +1,10 @@
 package models
 
+import kotlinx.serialization.Serializable
 import platforms.Platform
 import kotlin.reflect.KClass
 
+@Serializable
 data class Playlist(
     val sourcePlatform: KClass<out Platform>,
     val id: String,
@@ -13,5 +15,6 @@ data class Playlist(
     val thumbnail: Thumbnail?,
     val numOfTracks: Int,
 ) {
+    @Serializable
     data class Thumbnail(val url: String, val width: Int?, val height: Int?)
 }
