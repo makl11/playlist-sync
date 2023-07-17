@@ -17,6 +17,7 @@ class Spotify(
     private val clientId: String,
     private val redirectUrl: String,
     private val codeVerifier: String = generateRandomString(128),
+    override val platform: SupportedPlatform = SupportedPlatform.SPOTIFY
 ) : Platform {
     private val receiver: VerificationCodeReceiver by lazy {
         val url = URL(redirectUrl)
